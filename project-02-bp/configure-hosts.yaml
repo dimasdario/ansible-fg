@@ -1,0 +1,16 @@
+---
+- name: Define acesso ao host remoto sem senha
+  hosts: lab2
+  become: true
+  vars_files:
+    - vars.yml
+  tasks:
+    - name: Define permissão para acesso ao host remoto sem senha
+      become: true
+      authorized_key:
+        user: "{{ redes_user }}"
+        state: present
+        key: "{{ lookup('file', './key/id_ed25519.pub') }}"
+
+  vars:
+    ansible_become_pass: "{{ redes_pass }}"

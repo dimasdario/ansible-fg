@@ -1,3 +1,22 @@
+
+cd Downloads
+
+###install zotero
+
+sudo apt update
+sudo apt upgrade
+sudo apt install libfuse2
+wget -qO- https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.sh | sudo bash
+sudo apt update
+sudo apt install zotero
+
+###install Mendeley
+
+wget https://static.mendeley.com/bin/desktop/mendeley-reference-manager-2.134.0-x86_64.AppImage
+chmod +x mendeley-reference-manager-2.134.0-x86_64.AppImage
+./mendeley-reference-manager-2.134.0-x86_64.AppImage --no-sandbox
+
+
 # Repositório de Projetos de Automação com Ansible
 
 Este repositório contém um conjunto de projetos utilizados nas aulas de Ansible, com o objetivo de demonstrar como podemos evoluir um projeto de automação para os laboratórios da faculdade. Este material deve ser usado como consulta para o desenvolvimento do projeto solicitado na disciplina de Elaboração de Projetos II.

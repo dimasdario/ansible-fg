@@ -1,4 +1,4 @@
-
+ ```sh
 cd Downloads
 
 ###install zotero
@@ -15,7 +15,7 @@ sudo apt install zotero
 wget https://static.mendeley.com/bin/desktop/mendeley-reference-manager-2.134.0-x86_64.AppImage
 chmod +x mendeley-reference-manager-2.134.0-x86_64.AppImage
 ./mendeley-reference-manager-2.134.0-x86_64.AppImage --no-sandbox
-
+```
 
 # Repositório de Projetos de Automação com Ansible
 
